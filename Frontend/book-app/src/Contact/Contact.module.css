@@ -1,0 +1,85 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f7fa; /* subtle light background */
+  padding: 20px;
+  font-family: "Inter", sans-serif;
+}
+
+/* Contact Card */
+.formWrapper {
+  background: #ffffff;
+  padding: 40px 35px;
+  border-radius: 12px;
+  width: 420px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.formWrapper h1 {
+  margin-bottom: 25px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #222;
+}
+
+/* Inputs & textarea */
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  background: #fafafa;
+  transition: border 0.3s, background 0.3s;
+}
+
+form textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #2563eb; /* blue */
+  background: #fff;
+  outline: none;
+}
+
+/* Error text */
+.error {
+  color: #dc2626; /* red */
+  font-size: 13px;
+  margin: -10px 0 10px;
+}
+
+/* Button */
+form button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  background: #2563eb; /* blue */
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+form button:hover {
+  background: #1d4ed8; /* darker blue */
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .formWrapper {
+    width: 100%;
+    padding: 30px 20px;
+  }
+}

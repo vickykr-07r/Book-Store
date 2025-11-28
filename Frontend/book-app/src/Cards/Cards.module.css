@@ -1,0 +1,88 @@
+.cards {
+  width: 280px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  background: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.cards:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Top image section */
+.Top img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.cards:hover .Top img {
+  transform: scale(1.05);
+}
+
+/* Bottom content section */
+.bottom {
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bottom h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  color: #1f2937;
+}
+
+.bottom span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #10b981; /* green for Free */
+  margin-left: 10px;
+}
+
+.bottom div:nth-child(2) {
+  font-size: 14px;
+  color: #4b5563; /* gray text for description */
+  line-height: 1.5;
+}
+
+/* Price and button row */
+.bottom div:nth-child(3) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.bottom p {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ef4444; /* red price */
+  margin: 0;
+}
+
+.bottom button {
+  padding: 8px 18px;
+  background: linear-gradient(90deg, #18c4c4, #a9612d, #db0707);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bottom button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(219, 7, 7, 0.4);
+}

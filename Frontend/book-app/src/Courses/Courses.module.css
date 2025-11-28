@@ -1,0 +1,27 @@
+/* Main container for the whole page */
+.Container {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+/* Navigation styling */
+.nav {
+  margin-bottom: 20px;
+}
+
+/* Grid container for cards */
+.item {
+    margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* responsive columns */
+  gap: 20px; /* space between cards */
+}
+
+/* Individual card wrapper (optional) */
+.data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

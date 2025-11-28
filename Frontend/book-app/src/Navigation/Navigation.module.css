@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1e293b;   
+  padding: 15px 40px;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+}
+
+
+.rightdata h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #facc15; 
+  letter-spacing: 1px;
+}
+
+
+.leftdata {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+
+.leftdata ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.leftdata ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.leftdata ul li a:hover {
+  color: #facc15;
+  border-bottom: 2px solid #facc15;
+  padding-bottom: 3px;
+}
+
+
+.search input {
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.search input:focus {
+  box-shadow: 0 0 8px #facc15;
+}
+.loginbutton button {
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: none;
+  background: #facc15;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.loginbutton button a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: #1e293b;
+}
+
+.loginbutton button:hover {
+  background: #eab308; 
+}
